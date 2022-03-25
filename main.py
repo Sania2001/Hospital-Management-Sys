@@ -26,7 +26,7 @@ while selection<4:
             Phone_no = int(input("Enter the phone No: "))
             insert_query = f"insert into Patient_table values({patient_id},'{name}','{Address}',{Phone_no})"
             c.execute(insert_query)
-            # c.commit()
+            conn.commit()
 
 
 
